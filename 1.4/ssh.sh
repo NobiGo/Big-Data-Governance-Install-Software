@@ -19,8 +19,8 @@ expect {
 "*password:" {send "$passwd\r"}
 }
 
-expect "#*" 
-send "hostname\r" 
+expect "#*"
+send "hostname\r"
 #检测模块expect是否安装
 send "./expect.sh\r"
 #判断ssh是否已经存在并且改变用户的目录
