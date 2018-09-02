@@ -12,7 +12,7 @@ hostname=`echo "$line" | awk '{print $4}'`
 spawn   ssh-copy-id $username@$hostname
 expect {
 "*yes/no*" {send "yes\r" ;exp_continue}
-"*password:" {send "123456\r";exp_continue}
+"*password:" {send "$passwd\r";exp_continue}
 }
 EOF
 done

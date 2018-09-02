@@ -19,7 +19,7 @@ expect {
 "*password:" {send "$passwd\r"}
 }
 
-expect "#*" 
+expect "#*"
 send "./sendSSH_Demo.sh\r"
 expect eof
 EOF
